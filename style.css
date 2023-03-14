@@ -1,0 +1,96 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* css variables */
+:root {
+    --navbar-height: 59px;
+
+}
+
+/* navigation bar\ */
+#navbar {
+    display: flex;
+    align-items: center;
+
+}
+
+/* logo and Image */
+#logo {
+    height: 120px;
+    margin: -5px 28px;
+}
+
+#logo img {
+    height: 28px;
+    margin: 49px 4px
+}
+
+
+#navbar {
+    position: relative;
+}
+
+#navbar ul {
+    display: flex;
+    color: white;
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+#navbar ul li a {
+    display: block;
+    text-decoration: none;
+    padding: 7px 24px;
+    margin: 12px 13px;
+    border-radius: 20px;
+    color: white;
+}
+
+#navbar ul li a:hover {
+    border-radius: 20px;
+    color: rgb(4, 4, 4);
+    background-color: white;
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+/* home section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+}
+#home::before{
+    content: "";
+    background:url(/img2.jpg) no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+}
+/* utility classes */
+.h-pri{
+    font-size: 2.8rem;
+    padding: 12px;
+}
+#home h1{
+    color: white;
+    text-align: center;
+}
+#home p{
+    color: white;
+    text-align: center;
+}
